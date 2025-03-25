@@ -25,13 +25,13 @@ const Navbar = () => {
         {/* desktop navbar items */}
 
         <div className='hidden sm:flex gap-2 items-center'>
-            <Link to={"/"} className='hover:underline' onClick={()=> setContentType("movie")}>
+            <Link to={"/"} className='hover:border-b-2 hover:text-lg border-red-600 p-3' onClick={()=> setContentType("movie")}>
             Movies
             </Link>
-            <Link to={"/"} className='hover:underline'onClick={() => setContentType("tv")}>
+            <Link to={"/"} className='hover:border-b-2 hover:text-lg border-red-600 p-3'onClick={() => setContentType("tv")}>
             TV Shows 
             </Link>
-            <Link to={"/history"} className='hover:underline'>
+            <Link to={"/history"} className='hover:border-b-2 hover:text-lg border-red-600 p-3'>
             Search history
             </Link>
         </div>
@@ -54,15 +54,15 @@ const Navbar = () => {
       {/* Mobile Navbar Items */}
         {isMobileMenu && (
             <div className='w-full sm:hidden mt-4 z-50 bg-black border rounded border-gray-800'>
-                <Link to={"/"} className='block hover:underline p-2'onClick={()=> {setContentType("movie") ; toggleMobileMenu()} }>
+                <Link to={"/"} className='block hover:border-b-2 hover:text-[17px] border-red-600 p-1'onClick={()=> {setContentType("movie") ; toggleMobileMenu()} }>
                 Movies
                 </Link>
 
-                <Link to={"/"} className='block hover:underline p-2'onClick={()=> {setContentType("tv") ; toggleMobileMenu()} }>
+                <Link to={"/"} className='block hover:border-b-2 hover:text-[17px] border-red-600 p-1'onClick={()=> {setContentType("tv") ; toggleMobileMenu()} }>
                 TV Shows
                 </Link>
 
-                <Link to={"/history"} className='block hover:underline p-2' onClick={toggleMobileMenu}>
+                <Link to={"/history"} className='block hover:border-b-2 hover:text-[17px] border-red-600 p-1' onClick={toggleMobileMenu}>
                 Search History
                 </Link>
 
